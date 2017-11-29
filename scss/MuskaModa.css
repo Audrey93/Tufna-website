@@ -1,0 +1,79 @@
+/*
+                                HEADER
+
+---------------------------------      ----------------------------------------------------------*/
+.header                                                                  {padding:0 45px 15px 45px;} 
+.info                                                                      {width:750px ; float:right; margin-right:10px;} 
+.info img                                                               {float:right; border-radius:100px;}
+.info p                                                                   {text-align:center; font-family: "PT Serif", Times New Roman, Times, Serif; font-size:20px; color:	#191970;}
+.citat                                                                    {float:right; margin-bottom:5px; margin-top:5px;}
+
+.clearfix:after                                                  {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix                                                              {display: inline-block; }
+
+* html .clearfix                                                    {height: 1%; }
+
+.clearfix                                                               {display: block; }
+
+/*                                BODY
+
+---------------------------------      ----------------------------------------------------------*/
+
+
+body                                                                        {font-family: "PT Serif", Times New Roman, Times, Seriferif; background:#191970;}
+.main                                                                      {width:90%; height: 2000px; margin:0 auto 0 auto; background-color:white;padding-top:20px;}
+.socijal                                                                {width:400px; margin: auto; padding:5px;}
+.content_left                                                      {width:60%; padding:5px;float:left;}
+.content_left p                                                   {text-align:justify;}
+.content_right                                                    {width:35%;margin-top:40px; float:right;margin-right:5px;}
+.content_right   h1                                              {font-size: 20px; margin:10px ; padding:10px;float:left;}
+.content_left   h1                                                {font-size: 20px; margin:10px ; padding:10px;}
+.content_right   img                                            {width:40%; height:40%;float:left;}
+
+/*                               MENU
+
+---------------------------------      ----------------------------------------------------------*/
+
+.wrapper                                                               {margin-bottom:50px}
+.navMenu                                                               {margin:10px 20px 10px 20px; padding:0;}
+.navMenu ul                                                            {margin:0; padding:0; line-height:30px;}
+.navMenu li                                                             {margin-left:-10px; padding:0 7px 0 7px; list-style:none; float:left; position:relative; background-color:white;}
+.navMenu ul li a                                                       {text-align:center; font-family:Constantia; text-decoration:none; height:30px; width:150px; display:block; color:#191970; float:left;}
+.navMenu ul ul                                                         {position:absolute; visibility:hidden; top:32px;}
+.navMenu li:hover                                                  {background-color:	#AFEEEE;}
+.navMenu ul li:hover ul                                           {background-color:white; visibility:visible;margin-top:-2px;}
+.navMenu ul li:hover ul li a:hover                          {color:#191970;}
+.li_prvi                                                                 {font-size:20px;}
+.navMenu .logo                                                      {float:left; width:10%; height:10%; } 
+.navMenu .logo img                                                {width:100%;height:100%;}
+.navMenu1                                                               {float:left; margin-top:40px; margin-left:10px; }
+.navMenu1 .li_prvi                                              {padding: 0 14px 0 10px}
+hr                                                                              {color:#191970; width:100%;float:left;background-color: #191970; height: 1px; border: 0;}
+.naj                                                                         {margin:5px;}
+.NaslovDesno                                                         {float:left; width:45%; height:45%; margin:5px;}
+.NaslovDesno h1                                                     {text-align:center;}
+.slikaDesno                                                            {float:left; width:45%; height:50%;margin:5px;}
+.slikaDesno img                                                     {width:100%; height:100%;}
+h1:hover                                                                  {color:#191970;}
+h2:hover                                                                  {color:#191970;}
+h1                                                                              {font-family:Constantia; font-size:20px;}
+.opsirnije                                                              {text-align:right; text-decoration:none;}
+.opsirnije a                                                           {text-decoration:none; color:black;}
+.opsirnije a:hover                                               {color:#191970;}
+.icon                                                                        {width:4%;height:4%; float:left; margin-top:30px;}
+.icon  img                                                                 {width:70%;height:70%;}
+#searchInput                                                           {border-top: 0px; border-left:0px; border-right:0px; border-bottom-color:#191970; width:150px; font-size:15px; color:#191970;}
+
+ul.share-buttons                                                     {list-style:none; padding:0;}
+ul.share-buttons li                                                  {display:inline;}
+
+ul.share-buttons .sr-only                                    {position: absolute; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;}
+
+.naj                                                                         {margin:5px;}
+.NaslovDesno                                                         {float:left; width:45%; height:45%; margin:5px;}
+.NaslovDesno h1                                                     {text-align:center;}
+.slikaDesno                                                            {float:left; width:45%; height:50%;margin:5px;}
+.slikaDesno1                                                           {float:left; width:45%; height:50%;margin:5px;}
+.slikaDesno img                                                     {width:100%; height:100%;}
+.slikaDesno1 img                                                     {width:100%; height:100%; border-radius:100px;}
+.socijal a                                                              {text-decoration:none; color:black;}

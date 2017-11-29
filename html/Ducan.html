@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link href="Stil.css" rel="stylesheet" type="text/css" />
+    <title>Tufna.ba | Naslovnica</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="smartpaginator.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="new.css">
+	    <link rel="stylesheet" href="animate.css-master/animate.min.css">
+
+    <link href="smartpaginator.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+	
+        $(document).ready(function () {
+            $('#green-contents').css('display', 'none');
+            $('#black-contents').css('display', 'none');
+            $('ul li').click(function () {
+                $('#red-contents').css('display', 'none');
+                $('#green-contents').css('display', 'none');
+                $('#black-contents').css('display', 'none');
+                if ($(this).attr('id') == '1') $('#red-contents').css('display', '');
+                if ($(this).attr('id') == '2') $('#green-contents').css('display', '');
+                if ($(this).attr('id') == '3') $('#black-contents').css('display', '');
+            });
+
+            $('#green').smartpaginator({ totalrecords: 15, recordsperpage: 6, datacontainer: 'mt', dataelement: 'tr', initval: 0, next: 'Next', prev: 'Prev', first: 'First', last: 'Last', theme: 'green' });
+
+            $('#black').smartpaginator({ totalrecords: 5, recordsperpage: 1, datacontainer: 'divs', dataelement: 'div', initval: 0, next: 'Next', prev: 'Prev', first: 'First', last: 'Last', theme: 'black' });
+
+            $('#red').smartpaginator({ totalrecords: 32, recordsperpage: 4, length: 4, next: 'Next', prev: 'Prev', first: 'First', last: 'Last', theme: 'red', controlsalways: true, onchange: function (newPage) {
+                $('#r').html('Page # ' + newPage);
+            }
+            });
+
+        });
+    </script>
+	
+	</head>
+
+
+
+<body>
+
+
+<div class="mainD" >
+        <div class="wrapper">
+            <div class="navMenu clearfix">
+			    <div class="logo"><img src="Tufnanovilogo.png"/></div>
+                <div class="navMenu1">
+                <ul>
+                    <li class="li_prvi"><a> NASLOVNICA</a> </li>
+                    <li class="li_prvi">
+                        <a>MODA</a>
+
+                        <ul>
+                            <li class="li_drugi"><a href="TackastaRevolucija.html">Ženska moda</a></li>
+                            <li class="li_drugi"><a href="MuskaModa.html">Muška moda</a></li>
+                            <li class="li_drugi"><a> Modni bonton</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="li_prvi">
+                        <a>DUĆAN</a>
+                    </li>
+                    <li class="li_prvi">
+                        <a>TUFNA DARUJE</a>
+                    </li>
+					<li class="li_prvi"><a href="Prijava.html">PRIJAVI SE</a></li>
+                </ul>
+				</div>
+			            <div class="icon">
+			            <img id="search" src="Slike/search.png"/>
+			            <input id="searchInput" type="text" name="fname" value="Search..."/></div>
+			 
+			           <div class="icon"><a href="https://www.facebook.com/"><img src="Slike/fbicon.png"/></a></div>
+			           <div class="icon"><a href="https://www.instagram.com/"><img src="Slike/instaicon.png"/></a></div>
+            		   <div class="icon"><a href="https://www.facebook.com/"><img src="Slike/shopcard.png"/></a></div>
+                       <br><p style="color:#E9967A;" id="demo">0</p>
+
+			</div>
+        </div>
+
+		
+
+
+		<table id="mt" cellpadding="0" cellspacing="0" border="0" class="table">
+                <tr class="header">
+                    <th>
+                        
+                    </th>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        
+                    </th>
+                   </tr>
+                <tr>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/cipela1.jpg"onmouseover="this.src='SlikeTabela/cipela3.jpg'" 
+onmouseout="this.src='SlikeTabela/cipela1.jpg'"/></th>
+                    <th id="myImg2" > <img  onclick="OtvoriSliku(myImg2)" src="SlikeTabela/kaput1.jpg"onmouseover="this.src='SlikeTabela/kaput2.jpg'" 
+onmouseout="this.src='SlikeTabela/kaput1.jpg'"/></th>
+                    <th id="myImg3" > <img  onclick="OtvoriSliku(myImg3)" src="SlikeTabela/stikla2.jpg"onmouseover="this.src='SlikeTabela/stikla1.jpg'" 
+onmouseout="this.src='SlikeTabela/stikla2.jpg'"/></th>
+                    <th id="myImg4" > <img  onclick="OtvoriSliku(myImg4)" src="SlikeTabela/bijelaTorba.jpg"onmouseover="this.src='SlikeTabela/bijelaTorba1.jpg'" 
+onmouseout="this.src='SlikeTabela/bijelaTorba.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img  onclick="PovecajSrce(s1)" src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s1"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s2)" src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s2"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s3)"  src="SlikeTabela/hearticon.png"/><p  class="animated infinite pulse" id ="s3"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s4)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s4"> </p></th>
+
+                    
+                </tr>
+                
+     <tr>
+                    <th id="myImg5" > <img  onclick="OtvoriSliku(myImg5)" src="SlikeTabela/rozaTorba2.jpg"onmouseover="this.src='SlikeTabela/rozaTorba1.jpg'" 
+onmouseout="this.src='SlikeTabela/rozaTorba2.jpg'"/></th>
+                    <th id="myImg6" > <img  onclick="OtvoriSliku(myImg6)" src="SlikeTabela/tufnaHaljina1.jpg"onmouseover="this.src='SlikeTabela/tufnaHaljina5.jpg'" 
+onmouseout="this.src='SlikeTabela/tufnaHaljina1.jpg'"/></th>
+                    <th id="myImg7" > <img  onclick="OtvoriSliku(myImg7)" src="SlikeTabela/elštikla.jpg"onmouseover="this.src='SlikeTabela/elštikla1.jpg'" 
+onmouseout="this.src='SlikeTabela/elštikla.jpg'"/></th>
+                    <th id="myImg8" > <img  onclick="OtvoriSliku(myImg8)" src="SlikeTabela/šarenaHaljina.jpg"onmouseover="this.src='SlikeTabela/šarenaHaljina4.jpg'" 
+onmouseout="this.src='SlikeTabela/šarenaHaljina.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s5)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s5"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s6)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s6"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s7)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s7"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s8)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s8"> </p></th>
+
+                    
+                </tr>
+                
+                <tr>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/lilahaljina.jpg"onmouseover="this.src='SlikeTabela/lilahaljina2.jpg'" 
+onmouseout="this.src='SlikeTabela/lilahaljina.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/bežHaljina.jpg"onmouseover="this.src='SlikeTabela/bežHaljina4.jpg'" 
+onmouseout="this.src='SlikeTabela/bežHaljina.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/crvenidrugikaput1.jpg"onmouseover="this.src='SlikeTabela/crvenidrugikaput.jpg'" 
+onmouseout="this.src='SlikeTabela/crvenidrugikaput1.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/crnatorba1.jpg"onmouseover="this.src='SlikeTabela/crnatorba.jpg'" 
+onmouseout="this.src='SlikeTabela/crnatorba1.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s12)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s12"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s9)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s9"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s10)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s10"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s11)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s11"> </p></th>
+
+                    
+                </tr>
+                
+				<tr>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/medotorba.jpg"onmouseover="this.src='SlikeTabela/medotorba1.jpg'" 
+onmouseout="this.src='SlikeTabela/medotorba.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/minttorba.jpg"onmouseover="this.src='SlikeTabela/minttorba1.jpg'" 
+onmouseout="this.src='SlikeTabela/minttorba.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/zelenaHaljina.jpg"onmouseover="this.src='SlikeTabela/zelenaHaljina1.jpg'" 
+onmouseout="this.src='SlikeTabela/zelenaHaljina.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/ruksak1.jpg"onmouseover="this.src='SlikeTabela/ruksak.jpg'" 
+onmouseout="this.src='SlikeTabela/ruksak1.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s16)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s16"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s13)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s13"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s14)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s14"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s15)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s15"> </p></th>
+
+                    
+                </tr>
+                
+				
+
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/crnahaljina.jpg"onmouseover="this.src='SlikeTabela/crnahaljina1.jpg'" 
+onmouseout="this.src='SlikeTabela/crnahaljina.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/košulja.jpg"onmouseover="this.src='SlikeTabela/košulja1.jpg'" 
+onmouseout="this.src='SlikeTabela/košulja.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/košuljaMašna.jpg"onmouseover="this.src='SlikeTabela/košuljaMašna1.jpg'" 
+onmouseout="this.src='SlikeTabela/košuljaMašna.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/Vkosulja.jpg"onmouseover="this.src='SlikeTabela/Vkosulja1.jpg'" 
+onmouseout="this.src='SlikeTabela/Vkosulja.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s29)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s29"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s17)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s17"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s18)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s18"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s19)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s19"> </p></th>
+
+                    
+                </tr>
+				<th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/cvijeceHaljina1.jpg"onmouseover="this.src='SlikeTabela/cvijeceHaljina.jpg'" 
+onmouseout="this.src='SlikeTabela/cvijeceHaljina1.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/cipele.jpg"onmouseover="this.src='SlikeTabela/cipele1.jpg'" 
+onmouseout="this.src='SlikeTabela/cipele.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/suknja.jpg"onmouseover="this.src='SlikeTabela/suknja1.jpg'" 
+onmouseout="this.src='SlikeTabela/suknja.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/cipela1.jpg"onmouseover="this.src='SlikeTabela/cipela3.jpg'" 
+onmouseout="this.src='SlikeTabela/cipela1.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s28)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s28"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s20)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s20"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s21)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s21"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s22)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s22"> </p></th>
+
+                    
+                </tr>
+				<th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/narukvica9.jpg"onmouseover="this.src='SlikeTabela/narukvica10.jpg'" 
+onmouseout="this.src='SlikeTabela/narukvica9.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/narukvica7.jpg"onmouseover="this.src='SlikeTabela/narukvica4.jpg'" 
+onmouseout="this.src='SlikeTabela/narukvica7.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/narukvica4.jpg"onmouseover="this.src='SlikeTabela/narukvica3.jpg'" 
+onmouseout="this.src='SlikeTabela/narukvica4.jpg'"/></th>
+                    <th id="myImg1" > <img  onclick="OtvoriSliku(myImg1)" src="SlikeTabela/narukvica2.jpg"onmouseover="this.src='SlikeTabela/narukvica11.jpg'" 
+onmouseout="this.src='SlikeTabela/narukvica2.jpg'"/></th>
+                </tr>
+                <tr>
+                   <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s27)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s27"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s23)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s23"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s25)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s25"> </p></th>
+
+                                       <th class="tabelaIkone"> <img  onclick="PovecajKorpu()" src="SlikeTabela/shopcard.png"/><img onclick="PovecajSrce(s26)"  src="SlikeTabela/hearticon.png"/><p class="animated infinite pulse" id ="s26"> </p></th>
+
+                    
+                </tr>
+                
+                
+            </table>
+
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			
+			<div id="green" style="margin: auto;">
+            </div>
+
+		
+
+</div>
+
+
+
+
+
+	
+</div>
+
+<div class="footer">
+<div class="socijal"> <p> &nbsp © 2016 Tufna.ba | O nama | Uvijeti korištenja | <a href="Kontakt.html">Kontakt</p> </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#search').click(function () {
+            $("#searchInput").toggle(1000);
+        });
+    });
+</script>
+<script>
+
+function PSrce()
+{
+return 'You like this';
+}
+function PovecajSrce(s){
+    s.innerHTML = PSrce();
+}
+
+</script>
+
+
+<script>
+var korpa=0;
+function PKorpu()
+{
+return korpa+=1;
+}
+function PovecajKorpu(){
+    document.getElementById("demo").innerHTML = PKorpu();
+}
+
+</script>
+</body>
+</html>

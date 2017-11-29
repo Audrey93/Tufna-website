@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link href="Stil.css" rel="stylesheet" type="text/css" />
+    <title>Tufna.ba | Naslovnica</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#search').click(function(){
+        $("#searchInput").toggle(1000);
+    });
+});
+</script>
+	
+	
+</head>
+<body>
+<div class="main">
+        <div class="wrapper">
+            <div class="navMenu clearfix">
+			<div class="logo">
+            <img src="Tufnanovilogo.png"/>
+             </div>
+                <div class="navMenu1">
+                <ul>
+                    <li class="li_prvi"><a href="Tufna.html"> NASLOVNICA</a> </li>
+                    <li class="li_prvi">
+                        <a>MODA</a>
+
+                        <ul>
+                            <li class="li_drugi"><a href="TackastaRevolucija.html">Ženska moda</a></li>
+                            <li class="li_drugi"><a href="MuskaModa.html">Muška moda</a></li>
+                            <li class="li_drugi"><a> Modni bonton</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="li_prvi">
+                        <a href="Ducan.html">DUĆAN</a>
+                        <ul>
+                            <li class="li_drugi"><a>First link</a></li>
+                            <li class="li_drugi"><a>Second link</a></li>
+                            <li class="li_drugi"><a>Third link</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="li_prvi">
+                        <a>TUFNA DARUJE</a>
+                        <ul>
+                            <li class="li_drugi"><a>First link</a></li>
+                            <li class="li_drugi"><a>Second link</a></li>
+                            <li class="li_drugi"><a>Third link</a></li>
+
+                        </ul>
+                    </li>
+					<li class="li_prvi"><a href="Prijava.html">PRIJAVI SE</a></li>
+                </ul>
+				</div>
+			 <div class="icon">
+			 <img id="search" src="Slike/search.png"/>
+			 <input id="searchInput" type="text" name="fname" value="Search..."><br>
+			 </div>
+			 
+			<div class="icon">
+            <a href="https://www.facebook.com/"><img src="Slike/fbicon.png"/></a>
+			
+             </div>
+			 <div class="icon">
+			 <a href="https://www.instagram.com/"><img src="Slike/instaicon.png"/></a>
+			 </div>
+            </div>
+        </div>
+		<div class="content">
+		<div class="content_left">
+		<form>
+		        <div class="forma">
+				<label for="Name">Ime:</label>
+				<input type="text" name="Name" id="Name" />
+				</div>
+			
+				<div class="forma">
+				<label for="City">Adresa:</label>
+				<input type="text" name="City" id="City" />
+				</div>
+				
+				<div class="forma">
+				<label for="Email" >E-mail:</label>
+				<input type="text" name="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="Email" />
+				</div>
+
+				
+				<div class="forma clearfix">
+				<label for="Message">Poruka:</label><br />
+				<textarea name="Message" rows="20" cols="50" id="Message"></textarea>
+				</div>
+
+		</form>
+</div>
+
+<div class="content_right">
+		<h2 class="naj"><b>NAJPREGLEDANIJE</b></h2>
+		<hr>
+		
+		 <div class="clearfix" style="margin:5px 10px 5px 10px;">
+		<div class="slikaDesno"><img src="Slike/Slika2.jpg" /></div>
+		<div class="NaslovDesno" ><h1>Neque porro quisquam est qui dolorem ipsum quia dolor</h1></div>
+		</div>
+		
+	    <div class="clearfix" style="margin:5px 10px 5px 10px;">
+		<div class="slikaDesno"><img src="Slike/Slika4.jpg" /></div>
+		<div class="NaslovDesno" ><h1>Neque porro quisquam est qui dolorem ipsum quia dolor</h1></div>
+		</div>
+		
+	    <div class="clearfix" style="margin:5px 10px 5px 10px;">
+		<div class="slikaDesno"><img src="Slike/Slika5.jpg" /></div>
+		<div class="NaslovDesno" ><h1>Neque porro quisquam est qui dolorem ipsum quia dolor</h1></div>
+		</div>
+		
+		
+
+</div>
+			<div class="content_left">
+		
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="socijal"> <p> &nbsp © 2016 Tufna.ba | <a href="O nama.html">O nama</a> | Uvjeti korištenja | <a href="Kontakt.html">Kontakt</a></p> </div>
+
+</div>
+
+<script>
+   function ValidateEmail("#Email")   
+{  
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))  
+  {  
+    return (true)  
+  }  
+    alert("You have entered an invalid email address!")  
+    return (false)  
+}  
+</script>
+
+
+
+</body>
+</html>

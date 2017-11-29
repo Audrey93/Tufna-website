@@ -1,0 +1,107 @@
+/*
+                                HEADER
+
+---------------------------------      ----------------------------------------------------------*/
+.header                                                                  {padding:0 45px 15px 45px;} 
+.clearfix:after                                                  {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix                                                              {display: inline-block; }
+* html .clearfix                                                    {height: 1%; }
+.clearfix                                                              {display: block; }
+.wrapper                                                                {margin-bottom:50px}
+.navMenu                                                                {margin:10px 20px 10px 20px; padding:0;}
+.navMenu ul                                                             {margin:0; padding:0; line-height:30px;}
+.navMenu li                                                              {margin-left:-10px; padding:0 7px 0 7px; list-style:none; float:left; position:relative; background-color:white;}
+.navMenu ul li a                                                        {text-align:center; font-family:Constantia; text-decoration:none; height:30px; width:150px; display:block; color:#E9967A; float:left;}
+.navMenu ul ul                                                          {position:absolute; visibility:hidden; top:32px;}
+.navMenu li:hover                                                  {background-color:antiquewhite;}
+.navMenu ul li:hover ul                                           {background-color:white; visibility:visible;margin-top:-2px;}
+.navMenu ul li:hover ul li a:hover                          {color:#E9967A;}
+.li_prvi                                                                 {font-size:20px;}
+.navMenu .logo                                                      {float:left; width:10%; height:10%; } 
+.navMenu .logo img                                                {width:100%;height:100%;}
+.navMenu1                                                                {float:left; margin-top:40px; margin-left:10px; }
+.navMenu1 .li_prvi                                               {padding: 0 14px 0 10px}
+.icon                                                                        {width:3%;height:3%; float:left; margin-top:30px;}
+.icon  img                                                                 {width:70%;height:70%;}
+#searchInput                                                           {border-top: 0px; border-left:0px; border-right:0px; border-bottom-color:#E9967A; width:150px; font-size:15px; color:#E9967A;}
+
+/*                                BODY
+
+---------------------------------      ----------------------------------------------------------*/
+
+
+body                                                                        {font-family:Constantia; background:#E9967A;}
+.main                                                                      {width:90%; height: 2200px; margin:0 auto 0 auto; background-color:white;padding-top:20px;}
+.mainD                                                                      {width:90%; margin:0 auto 0 auto; background-color:white;padding-top:20px;}
+.socijal                                                                {width:400px; margin: auto; padding:5px;}
+.socijal a                                                              {text-decoration:none; color:black;}
+.content_left                                                      {width:60%; padding:5px;float:left;}
+.content_left p                                                   {text-align:justify;}
+.content_right                                                    {width:35%; margin-top:40px; float:right; margin-right:5px;}
+.content_right  h1                                              {font-size: 20px; margin:10px ; padding:10px;float:left;}
+.content_left   h1                                                {font-size: 20px; margin:10px ; padding:10px;}
+.content_right   img                                            {width:40%; height:40%;float:left;}
+
+/*                               MENU
+
+---------------------------------      ----------------------------------------------------------*/
+
+.naj                                                                         {margin:5px;}
+.NaslovDesno                                                         {float:left; width:45%; height:45%; margin:5px;}
+.NaslovDesno h1                                                     {text-align:center;}
+.slikaDesno                                                            {float:left; width:45%; height:50%;margin:5px;}
+.slikaDesno1                                                           {float:left; width:45%; height:50%;margin:5px;}
+.slikaDesno img                                                     {width:100%; height:100%;}
+.slikaDesno1 img                                                     {width:100%; height:100%; border-radius:100px;}
+
+
+h1:hover                                                                  {color:#E9967A;}
+h2:hover                                                                  {color:#E9967A;}
+h1                                                                              {font-family:Constantia; font-size:20px;}
+hr                                                                              {color:#E9967A; width:100%;float:left;background-color: #E9967A ; height: 1px; border: 0;}
+
+.opsirnije                                                              {text-align:right; text-decoration:none;}
+.opsirnije a                                                           {text-decoration:none; color:black;}
+.opsirnije a:hover                                               {color:#E9967A;}
+
+ul.share-buttons                                                     {list-style:none; padding:0;}
+ul.share-buttons li                                                  {display:inline;}
+ul.share-buttons .sr-only                                    {position: absolute; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;}
+
+.kontaktSlika                                                          {width:300px; height:300px;margin:20px auto 20px auto;}
+.kontaktSlika img                                                    {height:100%;height:100%; border-radius:200px;}
+.kontaktSlika :hover                                              {width:320px;height:320px;}
+.forma                                                                         {width:350px;height:50px;margin:0 20px 0 20px; }
+.dugme                                                                         {width:320px;height:50px;margin:0 auto 0 auto; }
+.forma input                                                                 {border-top: 0px; border-left:0px; border-right:0px; border-bottom-color:#E9967A;width:350px;}
+.forma textarea                                                            {border-color:#E9967A;}
+
+
+.mySlides                                                                   {display:none}
+.slideshow-container                                             {max-width:100%; position:relative; margin:auto; }
+.text                                                                           { margin:auto; color:black;; font-size:150%; padding:40px 0 40px 0; position:absolute; bottom:8px; width: 100%; text-align: center; background-color:#ffffcc; opacity: 0.5;}
+.numbertext                                                               {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+.dot                                                                             {height: 13px; width: 13px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+.active                                                                       {background-color: #717171;}
+.fade                                                                           {-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}
+@-webkit-keyframes fade                    {from {opacity: .4} to {opacity: 1}}
+@keyframes fade                            {from {opacity: .4} to {opacity: 1}}
+@media only screen and (max-width: 300px)  {.text {font-size: 11px} }
+
+.okvir                                                                          {width:100%; height:15%;margin: 0 auto 0 auto;}
+.okvir1                                                                        { width:20%; height:100%; margin:0 25px 0 25px; float:left;}
+.okvirSlika                                                                {width:100%; height:50%;margin:7px 0 7px 0;}
+.okvirSlika img                                                          {width:100%;height:100%;}
+.okvirP                                                                         {width:100%; height:20%; margin:7px 0 7px 0;}
+.okvirP   p                                                                    {text-align:center; font-size:100%;}
+.okvirIkon                                                                    {width:50%; height:20%; margin:7px auto 7px auto;}
+.iconDucan                                                                     {height:50%;margin:10px;}
+.okvirIkon  :hover                                                        {opacity: 0.5;}
+.okvirP   p   :hover                                                                 {text-align:center; font-size:105%;}
+
+
+
+
+
+
+

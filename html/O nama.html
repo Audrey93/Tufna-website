@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <META name="DESCRIPTION" content="Ideja je izrada web stranice orjentirane na modnu industriju. 
+Govoreći o modi nezaobilazno je ne govoriti o njenim početcima koji su vezani za filmsku industriju koja je diktirala trendove, 
+tako da ću na ovoj web stranici često promatrati modu kroz prizmu filmske industrije.">
+<link rel="icon" type="image/png"href="Tufnanovilogo.ico">
+    <link href="Stil.css" rel="stylesheet" type="text/css" />
+    <title>Tufna.ba | O nama</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+      #map {
+        height: 400px;
+		margin:200px auto;
+        width: 90%;
+       }
+    </style>
+</head>
+	
+	
+</head>
+<body>
+<div class="main">
+        <div class="wrapper">
+            <div class="navMenu clearfix">
+			<div class="logo">
+            <img src="Tufnanovilogo.png"/>
+             </div>
+                <div class="navMenu1">
+                <ul>
+                    <li class="li_prvi"><a href="Tufna.html"> NASLOVNICA</a> </li>
+                    <li class="li_prvi">
+                        <a>MODA</a>
+
+                        <ul>
+                            <li class="li_drugi"><a href="">Ženska moda</a></li>
+                            <li class="li_drugi"><a href="MuskaModa.html">Muška moda</a></li>
+                            <li class="li_drugi"><a> Modni bonton</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="li_prvi">
+                        <a href="Ducan.html">DUĆAN</a>
+                        <ul>
+                            <li class="li_drugi"><a>First link</a></li>
+                            <li class="li_drugi"><a>Second link</a></li>
+                            <li class="li_drugi"><a>Third link</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="li_prvi">
+                        <a>TUFNA DARUJE</a>
+                        <ul>
+                            <li class="li_drugi"><a>First link</a></li>
+                            <li class="li_drugi"><a>Second link</a></li>
+                            <li class="li_drugi"><a>Third link</a></li>
+
+                        </ul>
+                    </li>
+					<li class="li_prvi"><a href="Prijava.html">PRIJAVI SE</a></li>
+                </ul>
+				</div>
+			 <div class="icon">
+			 <img id="search" src="Slike/search.png"/>
+			 <input id="searchInput" type="text" name="fname" value="Search..."><br>
+			 </div>
+			 
+			<div class="icon">
+            <a href="https://www.facebook.com/"><img src="Slike/fbicon.png"/></a>
+			
+             </div>
+			 <div class="icon">
+			 <a href="https://www.instagram.com/"><img src="Slike/instaicon.png"/></a>
+			 </div>
+            </div>
+        </div>
+		<div class="content">
+		<div class="content_left">
+		<h1 style="text-align:center;">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING</h1>
+		<div class="kontaktSlika" ><img  src="Slike/Slika1.jpg"/> </div>
+		<div><p>Praesent dui neque, egestas sed volutpat in, maximus sed nibh. Morbi at erat condimentum, 
+		mattis dolor nec, fringilla erat. Donec egestas pretium dui. Pellentesque ut pretium odio. 
+		Curabitur congue tincidunt nibh, eu faucibus eros fermentum ac. Suspendisse dignissim mi et lacinia pharetra.
+		Ut vel neque a ex eleifend vestibulum. Donec finibus rutrum libero in viverra.
+		</br>
+		</br>
+        Duis diam dolor, convallis sit amet volutpat at, facilisis vitae purus. Pellentesque eget consequat quam,
+        a malesuada tortor. In hac habitasse platea dictumst. Cum sociis natoque penatibus et magnis dis parturient montes, 
+		nascetur ridiculus mus. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+		</br>
+		Quisque eu nisl ac arcu efficitur vulputate. Pellentesque convallis eget felis vulputate lobortis. Duis at porta est. 
+		Nulla vel nulla varius velit blandit tincidunt. Donec non risus non enim aliquam consequat. Sed viverra dui turpis. 
+		Pellentesque enim nibh, convallis vel aliquam sit amet, luctus quis eros.</br></br>
+		<a href="Planiranje projekta_Adriana_Drljepan.rtf" download>
+		Link za preuzimanje...</a>
+		</p></div>
+		
+</div>
+
+<div class="content_right">
+		<h2 class="naj"><b>NAJPREGLEDANIJE</b></h2>
+		<hr>
+		
+		 <div class="clearfix" style="margin:5px 10px 5px 10px;">
+		<div class="slikaDesno"><img src="Slike/Slika2.jpg" /></div>
+		<div class="NaslovDesno" ><h1>Neque porro quisquam est qui dolorem ipsum quia dolor</h1></div>
+		</div>
+		
+	    <div class="clearfix" style="margin:5px 10px 5px 10px;">
+		<div class="slikaDesno"><img src="Slike/Slika4.jpg" /></div>
+		<div class="NaslovDesno" ><h1>Neque porro quisquam est qui dolorem ipsum quia dolor</h1></div>
+		</div>
+		
+	    <div class="clearfix" style="margin:5px 10px 5px 10px;">
+		<div class="slikaDesno"><img src="Slike/Slika5.jpg" /></div>
+		<div class="NaslovDesno" ><h1>Neque porro quisquam est qui dolorem ipsum quia dolor</h1></div>
+		</div>
+		
+		
+
+</div>
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 43.8563, lng:  18.4131};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+	  </script>
+	  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvEr2dAmAjt8qYhhfI7ASx_AgbYn1BEdQ&callback=initMap">
+    </script>
+
+
+</div>
+</div>
+<div class="footer">
+<div class="socijal"> <p> &nbsp © 2016 Tufna.ba | <a href="O nama.html">O nama</a> | Uvjeti korištenja | <a href="Kontakt.html">Kontakt</a></p> </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        $('#search').click(function () {
+            $("#searchInput").toggle(1000);
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
